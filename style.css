@@ -1,0 +1,39 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+
+
+/* Common/Utilities CSS Start */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+}
+.custom-bg-color{
+    background-color: #264653;
+}
+.custom-bg-color-alt {
+    background-color: #E76F51;
+}
+.custom-font-color {
+    color: #E76F51;
+}
+.custom-font-weight-400 {
+    font-weight: 400;
+}
+.custom-img-size {
+    width: 500px;
+    height: 400px;
+}
+.custom-width {
+    width: 30%;
+}
+.custom-grayscale {
+    filter: grayscale(90%);
+}
+.col:hover .custom-transition {
+    transform: scale(0.9);
+    transition: 1s ease-in;
+}
+.custom-user-img {
+    width: 190px;
+}
+/* Common/Utilities CSS End */
