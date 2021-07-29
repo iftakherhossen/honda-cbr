@@ -87,18 +87,34 @@ body {
 /* Media Query CSS Start */
 @media only screen and (max-width: 576px) {
 
+    .subscribe-now {
+        display: none;
+    }
     .custom-form-control {
         min-width: 98%;
     }
     .custom-img-size {
-        min-width: 350px;
-        min-height: 250px;
+        width: 100%;
+        margin-top: 3rem;
+        height: 100%;
     }
-
     #featured .col {
-        border: 1px solid #264653;
-        border-radius: 25px;
         padding-bottom: 10px;
+    }
+    iframe {
+        width: 100%;
+    }
+    #apply-online .custom-border {
+        border: 0;
+        margin: auto;
+    }
+    .custom-img-faq-size {
+        width: 99%;
+        height: 99%;
+        margin: auto;
+    }
+    .list-group {
+        padding-left: 0;
     }
 
 }
@@ -107,10 +123,13 @@ body {
     .custom-form-control {
         min-width: 99%;
     }
+    iframe {
+        width: 100%;
+    }
     .custom-img-size {
-        min-width: 350px;
-        min-height: 250px;
-        margin: auto;
+        width: 100%;
+        margin-top: 3rem;
+        height: 100%;
     }
 
 }
