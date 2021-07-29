@@ -23,7 +23,7 @@
 
     <header class="custom-bg-color">
         <!-- Navbar Section Start -->
-        <nav class="navbar navbar-expand-lg navbar-light py-4 custom-font-weight-400 animate__animated animate__bounceInDown">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 custom-font-weight-400">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,13 +42,46 @@
                             <a class="nav-link text-white" href="#news">News</a>
                         </li>
                         <li class="nav-item mx-1">
-                            <a class="nav-link text-white" href="#showroom">Showroom</a>
-                        </li>
-                        <li class="nav-item mx-1">
                             <a class="nav-link text-white" href="#contact">Contact</a>
                         </li>
-                        <li class="ms-5 ms-xs-0 ms-sm-0">
-                            <button class="btn custom-bg-color-alt text-white shadow-lg">Login</button>
+                        <li class="ms-4">
+                            <!-- Button Modal Start -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn custom-bg-color-alt text-white shadow-lg"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header custom-bg-color-alt">
+                                            <h4 class="modal-title text-dark" id="staticBackdropLabel">Welcome Folks!</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body"> 
+                                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                                                <div class="col-12 col-md-4 col-lg-4">
+                                                    <img src="images/user.png" alt="User" class="custom-user-img-alt"> 
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-8">
+                                                    <form class="py-auto">
+                                                        <input type="email" placeholder="Email" class="form-control my-3">
+                                                        <input type="password" placeholder="Password" class="form-control mt-3">
+                                                        <a href="#" class="custom-font-size float-end">Forget Password</a>
+                                                    </form>
+                                                </div>
+                                            </div>                                 
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn custom-bg-color-alt fs-5 text-white" data-bs-dismiss="modal">Login</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button Modal End -->
                         </li>
                     </ul>
                 </div>
@@ -91,8 +124,7 @@
                                                 <a href="https://www.bikebd.com/price/honda-cbr300r/"
                                                     class="fs-6 custom-font-color text-decoration-none">More Details</a>
                                             </div>
-                                            <div
-                                                class="text-dark text-center border border-4 custom-width float-end mb-2">
+                                            <div class="text-dark text-center border border-4 custom-width float-end mb-2">
                                                 <h5 class="custom-bg-color text-white py-1">Expert Score</h5>
                                                 <h2>9.5</h2>
                                             </div>
@@ -170,7 +202,7 @@
                 <small class="custom-font-color">Best bike collection</small>
                 <hr style="width:6%; height:2px;" class="custom-font-color mt-1">
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5 mb-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-5 mb-5">
                 <div class="col">
                     <div class="card border-0 h-100 custom-grayscale">
                         <img src="images/feature-bike.jpg" class="card-img-top px-4 pt-3 custom-transition" alt="Bike">
@@ -195,7 +227,7 @@
             <div class="mt-5 text-center">
                 <h2>Latest News</h2>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-5">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
                         <img src="images/bike-1.png" class="card-img-top px-4 pt-3" alt="Bike">
@@ -406,13 +438,8 @@
 
         <!-- Driving School Section Start -->
         <section class="container">
-            <div class="pt-5 text-center">
-                <h2>Wanna Learn How to <span class="custom-font-color">Drive</span>?</h2>
-                <p>You are in a safe and best place for learning!</p>
-            </div>
-
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-6 g-5 py-5">
-                <div class="col-12 col-md-6 col-lg-6 pb-4 shadow-lg">
+                <div class="col-12 col-md-6 col-lg-6 pb-4 shadow-lg custom-border">
                     <div class="text-center my-5">
                         <h2>Fill the Form</h2>
                         <h5>For Apply Here</h5>
@@ -461,7 +488,10 @@
                     </form>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 my-3 m-sm-auto">
-                    <h2 class="p-4">Why Us?</h2>
+                    <div class="py-5 text-center">
+                        <h2>Wanna Learn How to <span class="custom-font-color">Drive</span>?</h2>
+                        <p>You are in a safe and best place for learning!</p>
+                    </div>
                     <ul class="list-group list-group-flush ps-4">
                         <li class="list-group-item">We provide safe and secure place for driving.</li>
                         <li class="list-group-item custom-list-bg">We have 100 cars.</li>
@@ -471,15 +501,14 @@
                         <li class="list-group-item custom-list-bg">After teaching we provide job in different company.</li>
                         <li class="list-group-item">We teach students until they get a good score on driving.</li>
                     </ul>
-                    <h4 class="mt-5 text-center">So choose best get best!</h4>
-                    <h5 class="text-center">Happy Driving!</h5>
+                    <h4 class="mt-4 text-center custom-font-color">Happy Driving!</h4>
                 </div>
             </div>
         </section>
         <!-- Driving School Section End -->
 
         <!-- Subscribe Now Section Start -->
-        <section class="container custom-bg-color-alt">
+        <section class="container custom-bg-color-alt mt-3">
             <div class="text-center text-white p-5">
                 <h2>Subscribe Us for Latest News!</h2>
                 <form class="pt-4 px-5">
@@ -489,17 +518,60 @@
             </div>
         </section>
         <!-- Subscribe Now Section End -->
+
+        <!-- Contact Section Start -->
+        <section class="container py-5" id="contact">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card border-0 shadow h-100 d-flex align-items-center text-center">
+                        <div class="card-body mt-1 p-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.700311872784!2d90.34510366942551!3d23.794582086915813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1627472359467!5m2!1sen!2sbd" width="500px" height="490px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card border-0 shadow">
+                        <div class="p-5">
+                            <h2>Wanna Contact With Us!</h2>
+                            <form class="mt-5">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height:120px"></textarea>
+                                    <label for="floatingTextarea2">Comments</label>
+                                </div>
+                                <div class="d-flex align-items-end">
+                                    <button class="btn custom-bg-color-alt w-25 mt-3 text-white fs-5 ms-auto">Send</button>
+                                </div>
+                            </form>
+                            <hr style="height:5px;">
+                            <div class="fs-2 mt-4 px-4 py-2 text-center">
+                                <a href="https://www.facebook.com/hosseniftakher" class="custom-font-color"><i class="fab fa-facebook mx-1"></i></a>
+                                <a href="https://www.instagram.com/hossen_iftakher/" class="custom-font-color"><i class="fab fa-instagram mx-1"></i></a>
+                                <a href="https://twitter.com/iftakher_hossen" class="custom-font-color"><i class="fab fa-twitter mx-1"></i></a>
+                                <a href="https://www.linkedin.com/in/iftakher-hossen/" class="custom-font-color"><i class="fab fa-linkedin-in mx-2"></i></a>
+                                <a href="mailto:iftakher.one@gmail.com" class="custom-font-color"><i class="far fa-envelope"></i></a>
+                                <a href="tel:+8809638179430" class="mobilesOnly custom-font-color"><i class="fas fa-phone-square-alt mx-2"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
     </main>
 
     <footer class="custom-margin-top bg-dark text-white">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-5">
                 <div class="col-12 col-md-7 col-lg-9 pb-4">
-                    <div class="custom-font-size">
+                    <div class="fs-6">
                         <a href="#" class="text-decoration-none px-2 text-white">Download Now</a>
                         <a href="#" class="text-decoration-none px-2 text-white">License</a>
                     </div>
-                    <div class="custom-font-size mt-2">
+                    <div class="fs-6 mt-2">
                         <a href="#" class="text-decoration-none px-2 text-white">Home</a>
                         <a href="#" class="text-decoration-none px-2 text-white">About</a>
                         <a href="#" class="text-decoration-none px-2 text-white">Features</a>
@@ -509,10 +581,10 @@
                         <a href="#" class="text-decoration-none px-2 text-white">Help</a>
                     </div>
                     <div class="mt-4 px-2">
-                        <small>© 2021 Bike. All rights reserved, Iftakher Hossen, Bangladesh.</small>
+                        <small>© 2021 Bike. All rights reserved, <a href="https://iftakherhossen.github.io/portfolio/index.html" class="text-decoration-none custom-font-color">Iftakher Hossen</a>, Bangladesh.</small>
                     </div>
                 </div>
-                <div class="col-5 col-md-5 col-lg-3 my-3 m-sm-auto">
+                <div class="col-5 col-md-5 col-lg-3 my-3">
                     <h5>Get the App</h5>
                     <div class="custom-img-container mt-3">
                         <img src="images/play-store.jpg" alt="Play-Store" class="custom-width-60 mb-2">

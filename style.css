@@ -43,6 +43,9 @@ body {
 .custom-user-img {
     width: 190px;
 }
+.custom-user-img-alt {
+    width: 130px;
+}
 .custom-img-faq-size {
     width: 430px;
     height: 420px;
@@ -70,10 +73,14 @@ body {
     margin-top: 10%;
 }
 .custom-font-size {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .custom-list-bg {
     background-color: #eee;
+}
+.custom-border {
+    border: 3px solid #E76F51;
+    border-radius: 15px;
 }
 /* Common/Utilities CSS End */
 
