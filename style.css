@@ -26,6 +26,9 @@ body {
 .custom-width {
     width: 30%;
 }
+.custom-width-60 {
+    width: 60%;
+}
 .custom-grayscale {
     filter: grayscale(90%);
 }
@@ -63,4 +66,45 @@ body {
     outline: 0;
     border: 0;
 }
+.custom-margin-top {
+    margin-top: 10%;
+}
+.custom-font-size {
+    font-size: 1rem;
+}
+.custom-list-bg {
+    background-color: #eee;
+}
 /* Common/Utilities CSS End */
+
+/* Media Query CSS Start */
+@media only screen and (max-width: 576px) {
+
+    .custom-form-control {
+        min-width: 98%;
+    }
+    .custom-img-size {
+        min-width: 350px;
+        min-height: 250px;
+    }
+
+    #featured .col {
+        border: 1px solid #264653;
+        border-radius: 25px;
+        padding-bottom: 10px;
+    }
+
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .custom-form-control {
+        min-width: 99%;
+    }
+    .custom-img-size {
+        min-width: 350px;
+        min-height: 250px;
+        margin: auto;
+    }
+
+}
+/* Media Query CSS End */
