@@ -33,7 +33,34 @@ body {
     transform: scale(0.9);
     transition: 1s ease-in;
 }
+.col:hover .custom-transition-alt {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
 .custom-user-img {
     width: 190px;
+}
+.custom-img-faq-size {
+    width: 430px;
+    height: 420px;
+}
+.custom-width-alt {
+    width: 90%;
+}
+.ms-n1 {
+    margin-left: -7.1rem;
+}
+.ms-n1 {
+    margin-top: -5px;
+}
+.custom-br-50 {
+    border-radius: 0 50px 50px 0;
+}
+.custom-form-control {
+    width: 65%;
+    padding: 1rem;
+    border-radius: 50px;
+    outline: 0;
+    border: 0;
 }
 /* Common/Utilities CSS End */
